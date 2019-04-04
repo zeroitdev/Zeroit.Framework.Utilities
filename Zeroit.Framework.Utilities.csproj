@@ -1,0 +1,1514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F6387C9-FC10-4812-84D5-F0F6D4769CDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zeroit.Framework.Utilities</RootNamespace>
+    <AssemblyName>Zeroit.Framework.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\Zeroit.Framework.Utilities.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>..\..\..\..\..\Downloads\ZENX 10\Tutorials\Winforms\Code Samples\Code Project\ICSharpCode TextEditor\src\Src\ICSharpCode.TextEditor\Project\Migrated rules for Zeroit.Framework.CodeEditor.TextEditor.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Zeroit.Framework.Utilities.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>..\..\..\..\..\Downloads\ZENX 10\Tutorials\Winforms\Code Samples\Code Project\ICSharpCode TextEditor\src\Src\ICSharpCode.TextEditor\Project\Migrated rules for Zeroit.Framework.CodeEditor.TextEditor.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ZeroitStrongKeys.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\AnimationFunctions.cs" />
+    <Compile Include="Animation\Easing.cs" />
+    <Compile Include="Animation\KnownAnimationFunctions.cs" />
+    <Compile Include="Animation\SlideAnimation.cs" />
+    <Compile Include="Audio\Mp3\Mp3Info\ID3v1.cs" />
+    <Compile Include="Bitmap\BitmapBlur.cs" />
+    <Compile Include="Bitmap\BitmapAdjuster.cs" />
+    <Compile Include="Bitmap\ControlBlur.cs" />
+    <Compile Include="Bitmap\ControlShadow.cs" />
+    <Compile Include="Bitmap\GlowingByPath.cs" />
+    <Compile Include="Bitmap\Imaging\Base64Bitmaps.cs" />
+    <Compile Include="Bitmap\Imaging\Base64Thumbnails.cs" />
+    <Compile Include="Bitmap\Imaging\Base64ToBitmap.cs" />
+    <Compile Include="Bitmap\Imaging\BinarySerialization-CustomDataType.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapColorSubstitution.cs" />
+    <Compile Include="Bitmap\Imaging\BinarySerialization-ExtObject.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapArgbSwapping.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapColorBalance.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapColorSubstitutionExtended.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapFilters.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapFiltersColorMatrix.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapPixelManipulation.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapPixelManipulationExtended.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapShading.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapTint.cs" />
+    <Compile Include="Bitmap\Imaging\BiTonalBitmap.cs" />
+    <Compile Include="Bitmap\Imaging\BitwiseBitmapBlending.cs" />
+    <Compile Include="Bitmap\Imaging\BitwiseBitmapBlend.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapImageBlending.cs" />
+    <Compile Include="Bitmap\Imaging\BooleanEdgeDetection.cs" />
+    <Compile Include="Bitmap\ImageToCode.cs" />
+    <Compile Include="Bitmap\PngToBmp.cs" />
+    <Compile Include="Bitmap\ImageHelper.cs" />
+    <Compile Include="Bitmap\GetExecutableIcon.cs" />
+    <Compile Include="Bitmap\CBitOps.cs" />
+    <Compile Include="Bitmap\Mirror.cs" />
+    <Compile Include="Brush and Pen Conversions\Conversion.cs" />
+    <Compile Include="Camera\Camera.cs" />
+    <Compile Include="Collections\Generic\FastQueue.cs" />
+    <Compile Include="Collections\Generic\IKeyedCollection.cs" />
+    <Compile Include="Collections\Generic\ILightCollection.cs" />
+    <Compile Include="Collections\Generic\KeyedCollection.cs" />
+    <Compile Include="Collections\Generic\LightCollection.cs" />
+    <Compile Include="Collections\Generic\ReadOnlyCollection.cs" />
+    <Compile Include="Collections\Generic\ReadOnlyKeyedCollection.cs" />
+    <Compile Include="Collections\Generic\TreeCollection.cs" />
+    <Compile Include="Collections\Generic\TreeItem.cs" />
+    <Compile Include="Collections\Generic\TreeItemCollection.cs" />
+    <Compile Include="Collections\Generic\TreeItemEnumerator.cs" />
+    <Compile Include="Collections\Specialized\StringCollection.cs" />
+    <Compile Include="ColorCube.cs" />
+    <Compile Include="Colors\AllColors\Colors\_ColorFunctionalities.cs" />
+    <Compile Include="Colors\ColorMap\ColorMap.cs" />
+    <Compile Include="Colors\GrayScale.cs" />
+    <Compile Include="Colors\Hex.cs" />
+    <Compile Include="Colors\AlterColor.cs" />
+    <Compile Include="Colors\HexColorConverter.cs" />
+    <Compile Include="Colors\AllColors\Colors\A.cs" />
+    <Compile Include="Colors\AllColors\Colors\B.cs" />
+    <Compile Include="Colors\AllColors\Colors\C.cs" />
+    <Compile Include="Colors\AllColors\Colors\D.cs" />
+    <Compile Include="Colors\AllColors\Colors\E.cs" />
+    <Compile Include="Colors\AllColors\Enum.cs" />
+    <Compile Include="Colors\AllColors\Colors\F.cs" />
+    <Compile Include="Colors\AllColors\Colors\G.cs" />
+    <Compile Include="Colors\AllColors\Colors\H.cs" />
+    <Compile Include="Colors\AllColors\Colors\I.cs" />
+    <Compile Include="Colors\AllColors\Colors\J.cs" />
+    <Compile Include="Colors\AllColors\Colors\K.cs" />
+    <Compile Include="Colors\AllColors\Colors\L.cs" />
+    <Compile Include="Colors\AllColors\Colors\M.cs" />
+    <Compile Include="Colors\AllColors\Colors\N.cs" />
+    <Compile Include="Colors\AllColors\Colors\O.cs" />
+    <Compile Include="Colors\AllColors\Colors\P.cs" />
+    <Compile Include="Colors\AllColors\Colors\Q.cs" />
+    <Compile Include="Colors\AllColors\Colors\R.cs" />
+    <Compile Include="Colors\AllColors\Colors\S.cs" />
+    <Compile Include="Colors\AllColors\Colors\T.cs" />
+    <Compile Include="Colors\AllColors\Colors\U.cs" />
+    <Compile Include="Colors\AllColors\Colors\V.cs" />
+    <Compile Include="Colors\AllColors\Colors\W.cs" />
+    <Compile Include="Colors\AllColors\Colors\X.cs" />
+    <Compile Include="Colors\AllColors\Colors\Y.cs" />
+    <Compile Include="Colors\AllColors\Colors\Z.cs" />
+    <Compile Include="Colors\AllColors\UserControl\BaseColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Colors\AllColors\UserControl\CatColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Colors\AllColors\UserControl\CatColorPicker.Designer.cs">
+      <DependentUpon>CatColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colors\AllColors\UserControl\NoFlickerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Colors\AllColors\UserControl\NoFlickerPanel.Designer.cs">
+      <DependentUpon>NoFlickerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colors\AllColors\UserControl\WebColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Colors\AllColors\UserControl\WebColor.Designer.cs">
+      <DependentUpon>WebColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colors\ColorConvert\CIELab.cs" />
+    <Compile Include="Colors\ColorConvert\ColorConverter.cs" />
+    <Compile Include="Colors\ColorConvert\XYZ.cs" />
+    <Compile Include="Colors\ColorConvert\Hsv.cs" />
+    <Compile Include="Colors\Converters\GreyColor.cs" />
+    <Compile Include="Colors\BestContrast.cs" />
+    <Compile Include="Compression\SevenZipSharp\ArchiveExtractCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\ArchiveFileInfo.cs" />
+    <Compile Include="Compression\SevenZipSharp\ArchiveOpenCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\ArchiveProperty.cs" />
+    <Compile Include="Compression\SevenZipSharp\ArchiveUpdateCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\AskMode.cs" />
+    <Compile Include="Compression\SevenZipSharp\CompressionFailedException.cs" />
+    <Compile Include="Compression\SevenZipSharp\CompressionLevel.cs" />
+    <Compile Include="Compression\SevenZipSharp\CompressionMethod.cs" />
+    <Compile Include="Compression\SevenZipSharp\CompressionMode.cs" />
+    <Compile Include="Compression\SevenZipSharp\DisposeVariableWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\ExtractFileCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\ExtractFileCallbackArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\ExtractFileCallbackReason.cs" />
+    <Compile Include="Compression\SevenZipSharp\ExtractionFailedException.cs" />
+    <Compile Include="Compression\SevenZipSharp\FakeOutStreamWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\FileChecker.cs" />
+    <Compile Include="Compression\SevenZipSharp\FileInfoEventArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\FileNameEventArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\FileOverwriteEventArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\Formats.cs" />
+    <Compile Include="Compression\SevenZipSharp\IArchiveExtractCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\IArchiveOpenCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\IArchiveOpenVolumeCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\IArchiveUpdateCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\ICryptoGetTextPassword.cs" />
+    <Compile Include="Compression\SevenZipSharp\ICryptoGetTextPassword2.cs" />
+    <Compile Include="Compression\SevenZipSharp\IInArchive.cs" />
+    <Compile Include="Compression\SevenZipSharp\IInArchiveGetStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\IInStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\InArchiveFormat.cs" />
+    <Compile Include="Compression\SevenZipSharp\InMultiStreamWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\InStreamWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\InternalCompressionMode.cs" />
+    <Compile Include="Compression\SevenZipSharp\IntEventArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\IOutArchive.cs" />
+    <Compile Include="Compression\SevenZipSharp\IOutStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\IProgress.cs" />
+    <Compile Include="Compression\SevenZipSharp\ISequentialInStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\ISequentialOutStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\ISetProperties.cs" />
+    <Compile Include="Compression\SevenZipSharp\ItemPropId.cs" />
+    <Compile Include="Compression\SevenZipSharp\LzmaDecodeStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\LzmaEncodeStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\LzmaException.cs" />
+    <Compile Include="Compression\SevenZipSharp\LzmaProgressCallback.cs" />
+    <Compile Include="Compression\SevenZipSharp\MultiStreamWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\NativeMethods.cs" />
+    <Compile Include="Compression\SevenZipSharp\OpenEventArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\OperationResult.cs" />
+    <Compile Include="Compression\SevenZipSharp\OutArchiveFormat.cs" />
+    <Compile Include="Compression\SevenZipSharp\OutMultiStreamWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\OutStreamWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\PercentDoneEventArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\ProgressEventArgs.cs" />
+    <Compile Include="Compression\SevenZipSharp\PropIdToName.cs" />
+    <Compile Include="Compression\SevenZipSharp\PropVariant.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Buffer\InBuffer.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Buffer\OutBuffer.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\CoderPropId.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\Lzma\Base.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\Lzma\Decoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\Lzma\Encoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\LZ\BinTree.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\LZ\IInWindowStream.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\LZ\IMatchFinder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\LZ\InWindow.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\LZ\OutWindow.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\RangeCoder\BitDecoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\RangeCoder\BitEncoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\RangeCoder\BitTreeDecoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\RangeCoder\BitTreeEncoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\RangeCoder\Decoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\Compression\RangeCoder\Encoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\CRC.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\DataErrorException.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\ICodeProgress.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\ICoder.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\InvalidParamException.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\ISetCoderProperties.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\ISetDecoderProperties.cs" />
+    <Compile Include="Compression\SevenZipSharp\Sdk\IWriteCoderProperties.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipArchiveException.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipBase.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipCompressionFailedException.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipCompressor.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipException.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipExtractionFailedException.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipExtractor.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipInvalidFileNamesException.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipLibraryException.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipLibraryManager.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipSfx.cs" />
+    <Compile Include="Compression\SevenZipSharp\SevenZipSfxValidationException.cs" />
+    <Compile Include="Compression\SevenZipSharp\SfxModule.cs" />
+    <Compile Include="Compression\SevenZipSharp\StreamWrapper.cs" />
+    <Compile Include="Compression\SevenZipSharp\UpdateData.cs" />
+    <Compile Include="Compression\SevenZipSharp\ZipEncryptionMethod.cs" />
+    <Compile Include="ControlRenderer\Button.cs" />
+    <Compile Include="ControlRenderer\CheckBox.cs" />
+    <Compile Include="ControlRenderer\Column.cs" />
+    <Compile Include="ControlRenderer\Drawing.cs" />
+    <Compile Include="ControlRenderer\ListItem.cs" />
+    <Compile Include="ControlRenderer\Popup.cs" />
+    <Compile Include="ControlRenderer\Tooltip.cs" />
+    <Compile Include="Date\Date.cs" />
+    <Compile Include="DrawHelper\Brushes.cs" />
+    <Compile Include="DrawHelper\BlendColor.cs" />
+    <Compile Include="DrawHelper\FancyText.cs" />
+    <Compile Include="DrawHelper\CheckBox.cs" />
+    <Compile Include="DrawHelper\DrawCorners.cs" />
+    <Compile Include="DrawHelper\DrawBorders.cs" />
+    <Compile Include="DrawHelper\DrawImage.cs" />
+    <Compile Include="DrawHelper\Drawing\ColorHLS.cs" />
+    <Compile Include="DrawHelper\Drawing\ColorUtils.cs" />
+    <Compile Include="DrawHelper\Drawing\Drawing2D\PixelBuffer.cs" />
+    <Compile Include="DrawHelper\Drawing\Drawing2D\PixelBufferGraphics.cs" />
+    <Compile Include="DrawHelper\Drawing\Drawing2D\PixelBufferManagedGraphics.cs" />
+    <Compile Include="DrawHelper\Drawing\Drawing2D\PixelBufferManagedRenderer.cs" />
+    <Compile Include="DrawHelper\Drawing\Drawing2D\PixelBufferRenderDelegate.cs" />
+    <Compile Include="DrawHelper\Drawing\Drawing2D\PixelBufferRenderer.cs" />
+    <Compile Include="DrawHelper\Drawing\Drawing2D\PixelBufferRenderInfo.cs" />
+    <Compile Include="DrawHelper\Drawing\FreeImage.cs" />
+    <Compile Include="DrawHelper\Drawing\FreeImageFormatInfo.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\FontEnum.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\GDIBitmap.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\GDIBrushes.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\GDIColor.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\GDIFont.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\GDIObject.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\GDIPens.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\GDISurface.cs" />
+    <Compile Include="DrawHelper\Drawing\GDI\MemHandler.cs" />
+    <Compile Include="DrawHelper\Drawing\ImageInfo\Constants.cs" />
+    <Compile Include="DrawHelper\Drawing\ImageInfo\Fraction.cs" />
+    <Compile Include="DrawHelper\Drawing\ImageInfo\Info.cs" />
+    <Compile Include="DrawHelper\Drawing\ImageInfo\PropertyTag.cs" />
+    <Compile Include="DrawHelper\Drawing\Internal\FreeImageAPI.cs" />
+    <Compile Include="DrawHelper\Drawing\Internal\GDIplus.cs" />
+    <Compile Include="DrawHelper\Drawing\RoundRectangleBrush.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\IDrawable.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\IFillable.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\IRectangle.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\Shape.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeArc.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeBezier.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeClosedCurve.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeCurve.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeEllipse.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeLine.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapePie.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapePolygon.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapePolyline.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeRectangle.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeRoundRectangle.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeSpyral.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeStar.cs" />
+    <Compile Include="DrawHelper\Drawing\Shapes\ShapeThumbSize.cs" />
+    <Compile Include="DrawHelper\Drawing\SystemImageList.cs" />
+    <Compile Include="DrawHelper\DrawText.cs" />
+    <Compile Include="DrawHelper\DrawTick.cs" />
+    <Compile Include="DrawHelper\Controls\DropShadowPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawHelper\Ellipse.cs" />
+    <Compile Include="DrawHelper\FrameRegion.cs" />
+    <Compile Include="DrawHelper\Arrow.cs" />
+    <Compile Include="DrawHelper\GetArrowPath.cs" />
+    <Compile Include="DrawHelper\Glow.cs" />
+    <Compile Include="DrawHelper\Size.cs" />
+    <Compile Include="DrawHelper\SplitRectangles.cs" />
+    <Compile Include="DrawHelper\Reflection.cs" />
+    <Compile Include="DrawHelper\GraphPlotting.cs" />
+    <Compile Include="DrawHelper\FontMetrics.cs" />
+    <Compile Include="DrawHelper\GetFontMetrics.cs" />
+    <Compile Include="DrawHelper\MonochromeLockBits.cs" />
+    <Compile Include="DrawHelper\OffsetRectangle.cs" />
+    <Compile Include="DrawHelper\ShadowUtils.cs" />
+    <Compile Include="DrawHelper\Shadow\Bitmap.cs" />
+    <Compile Include="DrawHelper\Shadow\Blur.cs" />
+    <Compile Include="DrawHelper\Shadow\Effects.cs" />
+    <Compile Include="DrawHelper\Shadow\Layers.cs" />
+    <Compile Include="DrawHelper\Shadow\LockBitmap.cs" />
+    <Compile Include="DrawHelper\Shadow\Util.cs" />
+    <Compile Include="DrawHelper\TraceOutline.cs" />
+    <Compile Include="DrawHelper\Mark.cs" />
+    <Compile Include="DrawHelper\GetScaledImage.cs" />
+    <Compile Include="DrawHelper\ImageToIcon.cs" />
+    <Compile Include="DrawHelper\Triangle.cs" />
+    <Compile Include="DrawHelper\RoundRectangle.cs" />
+    <Compile Include="DrawHelper\CenterText.cs" />
+    <Compile Include="EnumHelper\EnumHelper.cs" />
+    <Compile Include="FilesAndFolder\Serializer.cs" />
+    <Compile Include="FilesAndFolder\TextIO.cs" />
+    <Compile Include="FilesAndFolder\SaveImage.cs" />
+    <Compile Include="FilesAndFolder\OpenImage.cs" />
+    <Compile Include="FilesAndFolder\LoadFolder.cs" />
+    <Compile Include="FontManager\FontManager.cs" />
+    <Compile Include="FormX\API\Crypto.cs" />
+    <Compile Include="FormX\API\Delegates.cs" />
+    <Compile Include="FormX\API\Enumerations\ALG.cs" />
+    <Compile Include="FormX\API\Enumerations\DT.cs" />
+    <Compile Include="FormX\API\Enumerations\DWMNCRENDERINGPOLICY.cs" />
+    <Compile Include="FormX\API\Enumerations\DWMWINDOWATTRIBUTE.cs" />
+    <Compile Include="FormX\API\Enumerations\DWM_SOURCE_FRAME_SAMPLING.cs" />
+    <Compile Include="FormX\API\Enumerations\ERROR.cs" />
+    <Compile Include="FormX\API\Enumerations\ETOKEN_PRIVILEGES.cs" />
+    <Compile Include="FormX\API\Enumerations\FILE.cs" />
+    <Compile Include="FormX\API\Enumerations\FILE_ATTRIBUTE.cs" />
+    <Compile Include="FormX\API\Enumerations\KEY.cs" />
+    <Compile Include="FormX\API\Enumerations\MAX.cs" />
+    <Compile Include="FormX\API\Enumerations\MEM.cs" />
+    <Compile Include="FormX\API\Enumerations\MOD.cs" />
+    <Compile Include="FormX\API\Enumerations\MOVEFILE.cs" />
+    <Compile Include="FormX\API\Enumerations\PROCESS.cs" />
+    <Compile Include="FormX\API\Enumerations\REG.cs" />
+    <Compile Include="FormX\API\Enumerations\ROOT_KEY.cs" />
+    <Compile Include="FormX\API\Enumerations\SYSTEM_INFORMATION_CLASS.cs" />
+    <Compile Include="FormX\API\Enumerations\VALUE_TYPE.cs" />
+    <Compile Include="FormX\API\Enumerations\VER_PLATFORM.cs" />
+    <Compile Include="FormX\API\Enumerations\VK.cs" />
+    <Compile Include="FormX\API\Enumerations\WH.cs" />
+    <Compile Include="FormX\API\Enumerations\WM.cs" />
+    <Compile Include="FormX\API\Enumerations\WTATYPE.cs" />
+    <Compile Include="FormX\API\File.cs" />
+    <Compile Include="FormX\API\Keyboard.cs" />
+    <Compile Include="FormX\API\Memory.cs" />
+    <Compile Include="FormX\API\Privileges.cs" />
+    <Compile Include="FormX\API\Process.cs" />
+    <Compile Include="FormX\API\Registry.cs" />
+    <Compile Include="FormX\API\Structures\BITMAPINFO.cs" />
+    <Compile Include="FormX\API\Structures\BITMAPINFOHEADER.cs" />
+    <Compile Include="FormX\API\Structures\DTTOPTS.cs" />
+    <Compile Include="FormX\API\Structures\DWM_BLURBEHIND.cs" />
+    <Compile Include="FormX\API\Structures\DWM_PRESENT_PARAMETERS.cs" />
+    <Compile Include="FormX\API\Structures\DWM_THUMBNAIL_PROPERTIES.cs" />
+    <Compile Include="FormX\API\Structures\DWM_TIMING_INFO.cs" />
+    <Compile Include="FormX\API\Structures\FILETIME.cs" />
+    <Compile Include="FormX\API\Structures\KEYBOARDLLHOOK.cs" />
+    <Compile Include="FormX\API\Structures\LUID.cs" />
+    <Compile Include="FormX\API\Structures\LUID_AND_ATTRIBUTES.cs" />
+    <Compile Include="FormX\API\Structures\MARGINS.cs" />
+    <Compile Include="FormX\API\Structures\MOUSEHOOK.cs" />
+    <Compile Include="FormX\API\Structures\MOUSELLHOOK.cs" />
+    <Compile Include="FormX\API\Structures\NCCALCSIZE_PARAMS.cs" />
+    <Compile Include="FormX\API\Structures\OSVERSIONINFO.cs" />
+    <Compile Include="FormX\API\Structures\POINT.cs" />
+    <Compile Include="FormX\API\Structures\RECT.cs" />
+    <Compile Include="FormX\API\Structures\RGBQUAD.cs" />
+    <Compile Include="FormX\API\Structures\SECURITY_ATTRIBUTES.cs" />
+    <Compile Include="FormX\API\Structures\SIZE.cs" />
+    <Compile Include="FormX\API\Structures\TOKEN_PRIVILEGES.cs" />
+    <Compile Include="FormX\API\Structures\UNSIGNED_RATIO.cs" />
+    <Compile Include="FormX\API\Structures\WIN32_FIND_DATAA.cs" />
+    <Compile Include="FormX\API\Structures\WIN32_FIND_DATAW.cs" />
+    <Compile Include="FormX\API\Structures\WTA_OPTIONS.cs" />
+    <Compile Include="FormX\API\Window.cs" />
+    <Compile Include="FormX\DrawingX\GraphicPathExtensions.cs" />
+    <Compile Include="DrawHelper\Smoothness.cs" />
+    <Compile Include="FormX\DrawingX\ImageExtensions.cs" />
+    <Compile Include="FormX\DrawingX\PointD.cs" />
+    <Compile Include="FormX\DrawingX\SizeD.cs" />
+    <Compile Include="FormX\FormX\Animation.cs" />
+    <Compile Include="FormX\FormX\ControlX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormX\FormX\Easing\Easing.cs" />
+    <Compile Include="FormX\FormX\Easing\EasIn.cs" />
+    <Compile Include="FormX\FormX\Easing\LinearEasing.cs" />
+    <Compile Include="FormX\FormX\Easing\SinusEasing.cs" />
+    <Compile Include="FormX\FormX\FormExtensions.cs" />
+    <Compile Include="FormX\FormX\Images.Designer.cs">
+      <DependentUpon>Images.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FormX\FormX\PushButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormX\FormX\ResizeDirection.cs" />
+    <Compile Include="FormX\FormX\SimpleToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormX\FormX\TransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormX\FormX\WindowX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormX\WebX\AjaxDataType.cs" />
+    <Compile Include="FormX\WebX\AjaxDelegates.cs" />
+    <Compile Include="FormX\WebX\AjaxEventArgs.cs" />
+    <Compile Include="FormX\WebX\AjaxRequest.cs" />
+    <Compile Include="FormX\WebX\AjaxRequestOptions.cs" />
+    <Compile Include="FormX\WebX\AjaxRequestType.cs" />
+    <Compile Include="FormX\WebX\AjaxResponseEventArgs.cs" />
+    <Compile Include="FormX\WebX\DataFilterEventArgs.cs" />
+    <Compile Include="FormX\WebX\DynamicJsonConverter.cs" />
+    <Compile Include="FormX\WebX\ReadyState.cs" />
+    <Compile Include="FormX\WebX\UrlExtensions.cs" />
+    <Compile Include="Form\GetControls.cs" />
+    <Compile Include="Form\ApplicationExtensions.cs" />
+    <Compile Include="Geographic\Cities.cs" />
+    <Compile Include="Globalization\IMEWindow.cs" />
+    <Compile Include="IO\Compression\BZip2\BZip2.cs" />
+    <Compile Include="IO\Compression\BZip2\BZip2Constants.cs" />
+    <Compile Include="IO\Compression\BZip2\BZip2Exception.cs" />
+    <Compile Include="IO\Compression\BZip2\BZip2InputStream.cs" />
+    <Compile Include="IO\Compression\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="IO\Compression\Checksums\Adler32.cs" />
+    <Compile Include="IO\Compression\Checksums\CRC32.cs" />
+    <Compile Include="IO\Compression\Checksums\IChecksum.cs" />
+    <Compile Include="IO\Compression\Checksums\StrangeCRC.cs" />
+    <Compile Include="IO\Compression\Core\FileSystemScanner.cs" />
+    <Compile Include="IO\Compression\Core\INameTransform.cs" />
+    <Compile Include="IO\Compression\Core\NameFilter.cs" />
+    <Compile Include="IO\Compression\Core\PathFilter.cs" />
+    <Compile Include="IO\Compression\Encryption\PkzipClassic.cs" />
+    <Compile Include="IO\Compression\GZip\GZIPConstants.cs" />
+    <Compile Include="IO\Compression\GZip\GZipException.cs" />
+    <Compile Include="IO\Compression\GZip\GzipInputStream.cs" />
+    <Compile Include="IO\Compression\GZip\GzipOutputStream.cs" />
+    <Compile Include="IO\Compression\SevenZip\Common\CRC.cs" />
+    <Compile Include="IO\Compression\SevenZip\Common\InBuffer.cs" />
+    <Compile Include="IO\Compression\SevenZip\Common\OutBuffer.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="IO\Compression\SevenZip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="IO\Compression\SevenZip\ICoder.cs" />
+    <Compile Include="IO\Compression\SharpZipBaseException.cs" />
+    <Compile Include="IO\Compression\Tar\InvalidHeaderException.cs" />
+    <Compile Include="IO\Compression\Tar\TarArchive.cs" />
+    <Compile Include="IO\Compression\Tar\TarBuffer.cs" />
+    <Compile Include="IO\Compression\Tar\TarEntry.cs" />
+    <Compile Include="IO\Compression\Tar\TarException.cs" />
+    <Compile Include="IO\Compression\Tar\TarHeader.cs" />
+    <Compile Include="IO\Compression\Tar\TarInputStream.cs" />
+    <Compile Include="IO\Compression\Tar\TarOutputStream.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\Deflater.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\Inflater.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="IO\Compression\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="IO\Compression\Zip\FastZip.cs" />
+    <Compile Include="IO\Compression\Zip\ZipConstants.cs" />
+    <Compile Include="IO\Compression\Zip\ZipEntry.cs" />
+    <Compile Include="IO\Compression\Zip\ZipException.cs" />
+    <Compile Include="IO\Compression\Zip\ZipFile.cs" />
+    <Compile Include="IO\Compression\Zip\ZipInputStream.cs" />
+    <Compile Include="IO\Compression\Zip\ZipNameTransform.cs" />
+    <Compile Include="IO\Compression\Zip\ZipOutputStream.cs" />
+    <Compile Include="IO\FilesCache.cs" />
+    <Compile Include="IO\ZipHelper.cs" />
+    <Compile Include="IO\ZipHelperDir.cs" />
+    <Compile Include="IO\ZipHelperEntry.cs" />
+    <Compile Include="IO\ZipHelperFile.cs" />
+    <Compile Include="LinqExtender\LinqExtender.cs" />
+    <Compile Include="Math\Conversions.cs" />
+    <Compile Include="Math\FastRandom.cs" />
+    <Compile Include="Math\Statistics.cs" />
+    <Compile Include="Math\Maths.cs" />
+    <Compile Include="Mouse\MouseState.cs" />
+    <Compile Include="GraphicsBuffer\GraphicsBuffer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FilesAndFolder\LoadFile.cs" />
+    <Compile Include="Painters\Helpers\NoFlickerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\NoFlickerPanel.Designer.cs">
+      <DependentUpon>NoFlickerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\BaseColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\BrushPainter.cs" />
+    <Compile Include="Painters\Helpers\Painters\Brushes\BrushPainter2.cs" />
+    <Compile Include="Painters\Helpers\Painters\Brushes\BrushPainter2Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\BrushPainter2Dialog.Designer.cs">
+      <DependentUpon>BrushPainter2Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\BrushPainterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\BrushPainterDialog.Designer.cs">
+      <DependentUpon>BrushPainterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\Painter2Panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\Painter2Panel.Designer.cs">
+      <DependentUpon>Painter2Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\PainterPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Brushes\PainterPanel.Designer.cs">
+      <DependentUpon>PainterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\CatColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\CatColorPicker.Designer.cs">
+      <DependentUpon>CatColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ColorGradientEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ColorGradientEditor.designer.cs">
+      <DependentUpon>ColorGradientEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ColorGradientEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ColorGradientEditorDialog.Designer.cs">
+      <DependentUpon>ColorGradientEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ComboColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ComboColorPicker.Designer.cs">
+      <DependentUpon>ComboColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ComboColorPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\ComboColorPickerDialog.Designer.cs">
+      <DependentUpon>ComboColorPickerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\CustomColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\CustomColorPicker.Designer.cs">
+      <DependentUpon>CustomColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\CustomColorPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\CustomColorPickerDialog.Designer.cs">
+      <DependentUpon>CustomColorPickerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\DashStyleComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\DragControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\HatchStyleComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\HatchStylePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\HatchStylePanel.Designer.cs">
+      <DependentUpon>HatchStylePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\HSColor.cs" />
+    <Compile Include="Painters\Helpers\Painters\Line.cs" />
+    <Compile Include="Painters\Helpers\Painters\LinearGradientBrush2.cs" />
+    <Compile Include="Painters\Helpers\Painters\LinearGradientModeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\LinearGradientPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\LinearGradientPanel.Designer.cs">
+      <DependentUpon>LinearGradientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\LineEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\LineEditorDialog.Designer.cs">
+      <DependentUpon>LineEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\LinePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\LinePanel.Designer.cs">
+      <DependentUpon>LinePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\NoFlickerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\NoFlickerPanel.Designer.cs">
+      <DependentUpon>NoFlickerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\PenPainter\Line.cs" />
+    <Compile Include="Painters\Helpers\Painters\PenPainter\LinePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\PenPainter\LinePanel.Designer.cs">
+      <DependentUpon>LinePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\PenPainter\PenEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\PenPainter\PenEditorDialog.Designer.cs">
+      <DependentUpon>PenEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\SystemColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\SystemColorPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\SystemColorPickerDialog.Designer.cs">
+      <DependentUpon>SystemColorPickerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\Utils.cs" />
+    <Compile Include="Painters\Helpers\Painters\WebColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\WebColorPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\Helpers\Painters\WebColorPickerDialog.Designer.cs">
+      <DependentUpon>WebColorPickerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\Helpers\ReflectionUtils.cs" />
+    <Compile Include="Painters\Helpers\ShadowUtils.cs" />
+    <Compile Include="Painters\Helpers\TransparentText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Painters\PolygonInput\MaginfierGlass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\PolygonInput\PolyEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painters\PolygonInput\PolyEditorDialog.Designer.cs">
+      <DependentUpon>PolyEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painters\PolygonInput\PolygonInput.cs" />
+    <Compile Include="Painters\PolygonInput\PolygonInputConverter.cs" />
+    <Compile Include="Painters\PolygonInput\PolyInputUITypeEditor.cs" />
+    <Compile Include="Painters\SpicyLipsTheme\Spicylips Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Painters\ThemeManagers\Themes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reflection\Property.cs" />
+    <Compile Include="Registry\KeyValue.cs" />
+    <Compile Include="Registry\Serializer.cs" />
+    <Compile Include="Serialization\Serializer.cs" />
+    <Compile Include="Serialization\SerializerAttribute.cs" />
+    <Compile Include="Serialization\SerializerPropertyAttribute.cs" />
+    <Compile Include="PathExtensions\PathExtension.cs" />
+    <Compile Include="Shell\ShellItem.cs" />
+    <Compile Include="Simulation\Button.cs" />
+    <Compile Include="Simulation\Control.cs" />
+    <Compile Include="Simulation\Mouse.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\BogoSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\BubbleSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\HeapSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\CountingSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\SelectionSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\RadixSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\QuickSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\PermutationSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\MergeSort.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\InsertionSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\BubbleSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\CocktailSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\OddEvenSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\CombSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\GnomeSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\InsertionSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\QuickSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\ShellSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\SelectionSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\MergeSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\BucketSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\HeapSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\CountSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\RadixSort.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\LinearSearch.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\BinarySearch.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\InterpolationSearch.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\NthLargest.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\MthSmallest.cs" />
+    <Compile Include="SortingAlgorithms\Sorts\SortUtilities.cs" />
+    <Compile Include="StringProcessing\Humanizer\Bytes\ByteRate.cs" />
+    <Compile Include="StringProcessing\Humanizer\Bytes\ByteSize.cs" />
+    <Compile Include="StringProcessing\Humanizer\Bytes\ByteSizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\CasingExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\CollectionHumanizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\Configuration\CollectionFormatterRegistry.cs" />
+    <Compile Include="StringProcessing\Humanizer\Configuration\Configurator.cs" />
+    <Compile Include="StringProcessing\Humanizer\Configuration\DateToOrdinalWordsConverterRegistry.cs" />
+    <Compile Include="StringProcessing\Humanizer\Configuration\FormatterRegistry.cs" />
+    <Compile Include="StringProcessing\Humanizer\Configuration\LocaliserRegistry.cs" />
+    <Compile Include="StringProcessing\Humanizer\Configuration\NumberToWordsConverterRegistry.cs" />
+    <Compile Include="StringProcessing\Humanizer\Configuration\OrdinalizerRegistry.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateHumanizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateTimeHumanizeStrategy\DateTimeHumanizeAlgorithms.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateTimeHumanizeStrategy\DefaultDateTimeHumanizeStrategy.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateTimeHumanizeStrategy\DefaultDateTimeOffsetHumanizeStrategy.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateTimeHumanizeStrategy\IDateTimeHumanizeStrategy.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateTimeHumanizeStrategy\IDateTimeOffsetHumanizeStrategy.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateTimeHumanizeStrategy\PrecisionDateTimeHumanizeStrategy.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateTimeHumanizeStrategy\PrecisionDateTimeOffsetHumanizeStrategy.cs" />
+    <Compile Include="StringProcessing\Humanizer\DateToOrdinalWordsExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\EnumDehumanizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\EnumHumanizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\FluentDate\In.cs" />
+    <Compile Include="StringProcessing\Humanizer\FluentDate\In.Months.cs" />
+    <Compile Include="StringProcessing\Humanizer\FluentDate\In.SomeTimeFrom.cs" />
+    <Compile Include="StringProcessing\Humanizer\FluentDate\On.Days.cs" />
+    <Compile Include="StringProcessing\Humanizer\FluentDate\PrepositionsExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\GrammaticalCase.cs" />
+    <Compile Include="StringProcessing\Humanizer\GrammaticalGender.cs" />
+    <Compile Include="StringProcessing\Humanizer\Inflections\Vocabularies.cs" />
+    <Compile Include="StringProcessing\Humanizer\Inflections\Vocabulary.cs" />
+    <Compile Include="StringProcessing\Humanizer\InflectorExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\LetterCasing.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\CollectionFormatters\DefaultCollectionFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\CollectionFormatters\ICollectionFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\CollectionFormatters\OxfordStyleCollectionFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\DateToOrdinalWords\DefaultDateToOrdinalWordConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\DateToOrdinalWords\IDateToOrdinalWordConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\DateToOrdinalWords\UsDateToOrdinalWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\ArabicFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\CroatianFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\CzechSlovakPolishFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\DefaultFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\FrenchFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\HebrewFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\IFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\RomanianFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\RussianFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\SerbianFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\SlovenianFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Formatters\UkrainianFormatter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\GrammaticalNumber\RussianGrammaticalNumber.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\GrammaticalNumber\RussianGrammaticalNumberDetector.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\AfrikaansNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\ArabicNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\BanglaNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\BrazilianPortugueseNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\ChineseNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\DefaultNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\DutchNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\EnglishNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\FarsiNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\FinnishNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\FrenchBelgianNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\FrenchNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\FrenchNumberToWordsConverterBase.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\FrenchSwissNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\GenderedNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\GenderlessNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\GermanNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\HebrewNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\INumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\ItalianNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\Italian\ItalianCardinalNumberCruncher.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\Italian\ItalianOrdinalNumberCruncher.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\NorwegianBokmalNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\PolishNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\RomanianNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\Romanian\RomanianCardinalNumberConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\Romanian\RomanianOrdinalNumberConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\RussianNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\SerbianCyrlNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\SerbianNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\SlovenianNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\SpanishNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\TurkishNumberToWordConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\UkrainianNumberToWordsConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\UzbekCyrlNumberToWordConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\NumberToWords\UzbekLatnNumberToWordConverter.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\DefaultOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\DutchOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\EnglishOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\GermanOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\IOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\ItalianOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\PortugueseOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\RomanianOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\RussianOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\SpanishOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\TurkishOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Ordinalizers\UkrainianOrdinalizer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\ResourceKeys.Common.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\ResourceKeys.DateHumanize.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\ResourceKeys.TimeSpanHumanize.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Resources.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\Tense.cs" />
+    <Compile Include="StringProcessing\Humanizer\Localisation\TimeUnit.cs" />
+    <Compile Include="StringProcessing\Humanizer\MetricNumeralExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\NoMatchFoundException.cs" />
+    <Compile Include="StringProcessing\Humanizer\NumberToNumberExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\NumberToTimeSpanExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\NumberToWordsExtension.cs" />
+    <Compile Include="StringProcessing\Humanizer\OnNoMatch.cs" />
+    <Compile Include="StringProcessing\Humanizer\OrdinalizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\Plurality.cs" />
+    <Compile Include="StringProcessing\Humanizer\RegexOptionsUtil.cs" />
+    <Compile Include="StringProcessing\Humanizer\RomanNumeralExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\StringDehumanizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\StringExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\StringHumanizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\TimeSpanHumanizeExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\ToQuantityExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\Transformer\IStringTransformer.cs" />
+    <Compile Include="StringProcessing\Humanizer\Transformer\To.cs" />
+    <Compile Include="StringProcessing\Humanizer\Transformer\ToLowerCase.cs" />
+    <Compile Include="StringProcessing\Humanizer\Transformer\ToSentenceCase.cs" />
+    <Compile Include="StringProcessing\Humanizer\Transformer\ToTitleCase.cs" />
+    <Compile Include="StringProcessing\Humanizer\Transformer\ToUpperCase.cs" />
+    <Compile Include="StringProcessing\Humanizer\TruncateExtensions.cs" />
+    <Compile Include="StringProcessing\Humanizer\Truncation\FixedLengthTruncator.cs" />
+    <Compile Include="StringProcessing\Humanizer\Truncation\FixedNumberOfCharactersTruncator.cs" />
+    <Compile Include="StringProcessing\Humanizer\Truncation\FixedNumberOfWordsTruncator.cs" />
+    <Compile Include="StringProcessing\Humanizer\Truncation\ITruncator.cs" />
+    <Compile Include="StringProcessing\Humanizer\Truncation\Truncator.cs" />
+    <Compile Include="StringProcessing\SortAlgorithmExtension\Helpers\SortOrder.cs" />
+    <Compile Include="StringProcessing\SortAlgorithmExtension\Helpers\Utility.cs" />
+    <Compile Include="StringProcessing\SortAlgorithmExtension\SortClass.cs" />
+    <Compile Include="StringProcessing\StringFunction\EnumToDictionary.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToShamsiDate.cs" />
+    <Compile Include="StringProcessing\StringFunction\StringBuilderExtension.cs" />
+    <Compile Include="StringProcessing\StringFunction\Reduce.cs" />
+    <Compile Include="StringProcessing\StringFunction\RemoveSpaces.cs" />
+    <Compile Include="StringProcessing\StringFunction\RemoveDiacritics.cs" />
+    <Compile Include="StringProcessing\StringFunction\PhoneNumber.cs" />
+    <Compile Include="StringProcessing\StringFunction\PhoneNumberValidator.cs" />
+    <Compile Include="StringProcessing\StringFunction\PasswordValidator.cs" />
+    <Compile Include="StringProcessing\StringFunction\ValidateName.cs" />
+    <Compile Include="StringProcessing\StringFunction\StreetAddress.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToNullable.cs" />
+    <Compile Include="StringProcessing\StringFunction\SecondsToString.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToSafeParseToDate.cs" />
+    <Compile Include="StringProcessing\StringFunction\StringToTimeSpan.cs" />
+    <Compile Include="StringProcessing\StringFunction\Split.cs" />
+    <Compile Include="StringProcessing\StringFunction\UcFirst.cs" />
+    <Compile Include="StringProcessing\StringFunction\ForEach.cs" />
+    <Compile Include="StringProcessing\StringFunction\Age.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsPrime.cs" />
+    <Compile Include="StringProcessing\StringFunction\LogExceptionToString.cs" />
+    <Compile Include="StringProcessing\StringFunction\EqualsByValue.cs" />
+    <Compile Include="StringProcessing\StringFunction\ReversedDateTime.cs" />
+    <Compile Include="StringProcessing\StringFunction\TakeFrom.cs" />
+    <Compile Include="StringProcessing\StringFunction\ExcelColumnIndex.cs" />
+    <Compile Include="StringProcessing\StringFunction\MakeCaps.cs" />
+    <Compile Include="StringProcessing\StringFunction\Slice.cs" />
+    <Compile Include="StringProcessing\StringFunction\WithVar.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsNotNullThenTrim.cs" />
+    <Compile Include="StringProcessing\StringFunction\LimitTextLength.cs" />
+    <Compile Include="StringProcessing\StringFunction\ValidateArithmeticExpression.cs" />
+    <Compile Include="StringProcessing\StringFunction\TakeFirst.cs" />
+    <Compile Include="StringProcessing\StringFunction\CSVQuoted.cs" />
+    <Compile Include="StringProcessing\StringFunction\Repeat.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsNullThenEmpty.cs" />
+    <Compile Include="StringProcessing\StringFunction\GetFirst.cs" />
+    <Compile Include="StringProcessing\StringFunction\Last.cs" />
+    <Compile Include="StringProcessing\StringFunction\IndicesOf.cs" />
+    <Compile Include="StringProcessing\StringFunction\ContainsNoSpaces.cs" />
+    <Compile Include="StringProcessing\StringFunction\InnerTruncate.cs" />
+    <Compile Include="StringProcessing\StringFunction\HasMultipleInstancesOf.cs" />
+    <Compile Include="StringProcessing\StringFunction\Reverse.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToStream.cs" />
+    <Compile Include="StringProcessing\StringFunction\TrimDuplicates.cs" />
+    <Compile Include="StringProcessing\StringFunction\CombineWith.cs" />
+    <Compile Include="StringProcessing\StringFunction\StringInBetween.cs" />
+    <Compile Include="StringProcessing\StringFunction\DeleteChars.cs" />
+    <Compile Include="StringProcessing\StringFunction\DoesNotEndWith.cs" />
+    <Compile Include="StringProcessing\StringFunction\DeleteFiles.cs" />
+    <Compile Include="StringProcessing\StringFunction\FormatSafe.cs" />
+    <Compile Include="StringProcessing\StringFunction\DoesNotStartWith.cs" />
+    <Compile Include="StringProcessing\StringFunction\In.cs" />
+    <Compile Include="StringProcessing\StringFunction\ContainsAll.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToNameValueCollection.cs" />
+    <Compile Include="StringProcessing\StringFunction\IndexOfOccurence.cs" />
+    <Compile Include="StringProcessing\StringFunction\SplitTo.cs" />
+    <Compile Include="StringProcessing\StringFunction\LeftOf.cs" />
+    <Compile Include="StringProcessing\StringFunction\JsonToObject.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToSentence.cs" />
+    <Compile Include="StringProcessing\StringFunction\Fill.cs" />
+    <Compile Include="StringProcessing\StringFunction\MoneyFormat.cs" />
+    <Compile Include="StringProcessing\StringFunction\ConvertTo.cs" />
+    <Compile Include="StringProcessing\StringFunction\GetMD5.cs" />
+    <Compile Include="StringProcessing\StringFunction\EvaluateAndCalculate.cs" />
+    <Compile Include="StringProcessing\StringFunction\CSVSplit.cs" />
+    <Compile Include="StringProcessing\StringFunction\StrongPassword.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToUrlSlug.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToColor.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToUrlString.cs" />
+    <Compile Include="StringProcessing\StringFunction\FileSizeFormat.cs" />
+    <Compile Include="StringProcessing\StringFunction\ParentDirectoryPath.cs" />
+    <Compile Include="StringProcessing\StringFunction\SplitIntoParts.cs" />
+    <Compile Include="StringProcessing\StringFunction\Or.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToInt.cs" />
+    <Compile Include="StringProcessing\StringFunction\InjectObjectProperties.cs" />
+    <Compile Include="StringProcessing\StringFunction\SendEmail.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToMd5.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToBytes.cs" />
+    <Compile Include="StringProcessing\StringFunction\Format.cs" />
+    <Compile Include="StringProcessing\StringFunction\SHA1Hash.cs" />
+    <Compile Include="StringProcessing\StringFunction\EqualsAny.cs" />
+    <Compile Include="StringProcessing\StringFunction\Strip.cs" />
+    <Compile Include="StringProcessing\StringFunction\CompileStringToAssembly.cs" />
+    <Compile Include="StringProcessing\StringFunction\Mask.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToEnum.cs" />
+    <Compile Include="StringProcessing\StringFunction\URLSlug.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsNullOrEmptyOrWhiteSpace.cs" />
+    <Compile Include="StringProcessing\StringFunction\DefaultIfNull.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToDecimal.cs" />
+    <Compile Include="StringProcessing\StringFunction\Replace.cs" />
+    <Compile Include="StringProcessing\StringFunction\LineToHtmlBreak.cs" />
+    <Compile Include="StringProcessing\StringFunction\Right.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsUnicode.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsIsin.cs" />
+    <Compile Include="StringProcessing\StringFunction\PersianNumber.cs" />
+    <Compile Include="StringProcessing\StringFunction\TitleCase.cs" />
+    <Compile Include="StringProcessing\StringFunction\URLValidation.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsNotNullOrEmpty.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToPlural.cs" />
+    <Compile Include="StringProcessing\StringFunction\Contains.cs" />
+    <Compile Include="StringProcessing\StringFunction\Linkify.cs" />
+    <Compile Include="StringProcessing\StringFunction\FirstAndLastDayOfMonth.cs" />
+    <Compile Include="StringProcessing\StringFunction\IPValidation.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsDate.cs" />
+    <Compile Include="StringProcessing\StringFunction\Truncate.cs" />
+    <Compile Include="StringProcessing\StringFunction\HtmlUtility.cs" />
+    <Compile Include="StringProcessing\StringFunction\Parse.cs" />
+    <Compile Include="StringProcessing\StringFunction\Left.cs" />
+    <Compile Include="StringProcessing\StringFunction\ContainsAny.cs" />
+    <Compile Include="StringProcessing\StringFunction\DefaultIfEmpty.cs" />
+    <Compile Include="StringProcessing\StringFunction\PolishIdentification.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsGuid.cs" />
+    <Compile Include="StringProcessing\StringFunction\EmailValidation.cs" />
+    <Compile Include="StringProcessing\StringFunction\ToSecureString.cs" />
+    <Compile Include="StringProcessing\StringFunction\HashCode.cs" />
+    <Compile Include="StringProcessing\StringFunction\IsNumeric.cs" />
+    <Compile Include="StringProcessing\StringFunction\EncryptOrDecrypt.cs" />
+    <Compile Include="StringProcessing\StringFunction\StripHtml.cs" />
+    <Compile Include="StringProcessing\StringFunction\FormatWithMask.cs" />
+    <Compile Include="StringProcessing\StringFunction\StringExtensions.cs" />
+    <Compile Include="StringProcessing\StringFunction\_StringFunctions.cs" />
+    <Compile Include="StringProcessing\String\Array.cs" />
+    <Compile Include="StringProcessing\String\Portion.cs" />
+    <Compile Include="StringProcessing\String\Remove.cs" />
+    <Compile Include="StringProcessing\String\Serializer.cs" />
+    <Compile Include="StringProcessing\String\Times.cs" />
+    <Compile Include="SortingAlgorithms\SortAlternative\ShellSort.cs" />
+    <Compile Include="Text\WordReader.cs" />
+    <Compile Include="Theme\ThemeManager.cs" />
+    <Compile Include="Timers\WeakTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentControl\TransparentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentControl\MakeTransparentControl.cs" />
+    <Compile Include="Web\GetIPAddress.cs" />
+    <Compile Include="Web\Redirect.cs" />
+    <Compile Include="Win32\ComInterfaces.cs" />
+    <Compile Include="Win32\Costants.cs" />
+    <Compile Include="Win32\Enums.cs" />
+    <Compile Include="Win32\NativeGdi32Api.cs" />
+    <Compile Include="Win32\NativeImm32Api.cs" />
+    <Compile Include="Win32\NativeShellApi.cs" />
+    <Compile Include="Win32\NativeSubclasser.cs" />
+    <Compile Include="Win32\NativeThemeApi.cs" />
+    <Compile Include="Win32\NativeUser32Api.cs" />
+    <Compile Include="Win32\Structures.cs" />
+    <Compile Include="Win32\Win32Window.cs" />
+    <Compile Include="WindowsDLL\Gdi32\SetBkColorDLL.cs" />
+    <Compile Include="WindowsDLL\Gdi32\SetTextColorDLL.cs" />
+    <Compile Include="WindowsDLL\Key.cs" />
+    <Compile Include="WindowsDLL\Mouse.cs" />
+    <Compile Include="WindowsDLL\User32\DrawTextDLL.cs" />
+    <Compile Include="WindowsDLL\User32\FlashWindowExDLL.cs" />
+    <Compile Include="WindowsDLL\User32\Message.cs" />
+    <Compile Include="WindowsDLL\User32\SendInputDLL.cs" />
+    <Compile Include="WindowsDLL\User32\ShowWindowAsyncDLL.cs" />
+    <Compile Include="XMLSerializationGeneric-CustomDataType.cs" />
+    <Compile Include="XMLSerializationGeneric-ExtObject.cs" />
+    <Compile Include="XMLDeserialization-CustomDataType.cs" />
+    <Compile Include="XMLDeserialization-ExtString.cs" />
+    <Compile Include="WebServiceGenerator.cs" />
+    <Compile Include="Bitmap\Imaging\WeightedDifferenceOfGaussians.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\GaussianCalculator.cs" />
+    <Compile Include="Bitmap\Imaging\ImageArgbSwapping.cs" />
+    <Compile Include="Bitmap\Imaging\StandardDeviationEdgeDetection.cs" />
+    <Compile Include="Bitmap\Imaging\StainedGlassImageFilter.cs" />
+    <Compile Include="Bitmap\Imaging\SharpenEdgeDetection.cs" />
+    <Compile Include="Bitmap\Imaging\OilPaintingCartoonFilter.cs" />
+    <Compile Include="Bitmap\Imaging\MorphologicalEdgeDetection.cs" />
+    <Compile Include="Bitmap\Imaging\MinMaxEdgeDetection.cs" />
+    <Compile Include="ReadOnlyAttributes.cs" />
+    <Compile Include="PortInUse.cs" />
+    <Compile Include="ListViewObjects.cs" />
+    <Compile Include="Bitmap\Imaging\ImageUnsharpMask.cs" />
+    <Compile Include="Bitmap\Imaging\ImageTransformShear.cs" />
+    <Compile Include="Bitmap\Imaging\ImageTransformRotate.cs" />
+    <Compile Include="Bitmap\Imaging\ImageToIcon.cs" />
+    <Compile Include="Bitmap\Imaging\ImageSolarise.cs" />
+    <Compile Include="Bitmap\Imaging\ImageMedianFilter.cs" />
+    <Compile Include="Bitmap\Imaging\ImageErosionDilation.cs" />
+    <Compile Include="Bitmap\Imaging\ImageEdgeDetection.cs" />
+    <Compile Include="Bitmap\Imaging\ImageDistortionBlur.cs" />
+    <Compile Include="Bitmap\Imaging\ImageConvolutionFilters.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\BlurFilter.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\EdgeDetectionFilter.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\EmbossFilter.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\FilterBase.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\HighPassFilter.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\SharpenFilter.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\SoftenFilter.cs" />
+    <Compile Include="Bitmap\Imaging\ImageContrast.cs" />
+    <Compile Include="Bitmap\Imaging\ImageColourAverage.cs" />
+    <Compile Include="Bitmap\Imaging\ImageCartoonEffect.cs" />
+    <Compile Include="Bitmap\Imaging\ImageBoundaryExtraction.cs" />
+    <Compile Include="Bitmap\Imaging\ImageBlurFilters.cs" />
+    <Compile Include="Bitmap\Imaging\ImageBlending.cs" />
+    <Compile Include="Bitmap\Imaging\ImageASCIIArt.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\ColorCalculator.cs" />
+    <Compile Include="Bitmap\Imaging\CompassEdgeDetection.cs" />
+    <Compile Include="Bitmap\Imaging\BitmapGaussianKernelCalculator.cs" />
+    <Compile Include="Bitmap\Imaging\DifferenceOfGaussians.cs" />
+    <Compile Include="Bitmap\Imaging\ImageArithmetic.cs" />
+    <Compile Include="Bitmap\Imaging\ImageAbstractColorFilter.cs" />
+    <Compile Include="Bitmap\Imaging\GradientBasedEdgeDetection.cs" />
+    <Compile Include="Bitmap\Imaging\GaussianKernelCalculatorAlternative.cs" />
+    <Compile Include="Bitmap\Imaging\FuzzyBlurFilter.cs" />
+    <Compile Include="Bitmap\Imaging\GdiOpacityDrawing.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\MatrixCalculator.cs" />
+    <Compile Include="DriveSpaceAvailable.cs" />
+    <Compile Include="Bitmap\Imaging\Extensions\Matrix.cs" />
+    <Compile Include="Bitmap\ShadowForMostControls.cs" />
+    <Compile Include="Bitmap\ShadowToEllipse.cs" />
+    <Compile Include="Bitmap\Skew.cs" />
+    <Compile Include="Colors\Converters\CIELab.cs" />
+    <Compile Include="Colors\Converters\CIEXYZ.cs" />
+    <Compile Include="Colors\Converters\CMYK.cs" />
+    <Compile Include="Colors\Converters\ColorSpaceHelper.cs" />
+    <Compile Include="Colors\Converters\HSB.cs" />
+    <Compile Include="Colors\Converters\HSL.cs" />
+    <Compile Include="Colors\Converters\RGB.cs" />
+    <Compile Include="Colors\Converters\YUV.cs" />
+    <Compile Include="Bitmap\GausianBlur.cs" />
+    <Compile Include="Colors\Converters\HslColor.cs" />
+    <Compile Include="Bitmap\ImageBlackAndWhite.cs" />
+    <Compile Include="Bitmap\ImagePixelate.cs" />
+    <Compile Include="Colors\ColorConvert\AllColorsUtility.cs" />
+    <Compile Include="Form\FormUtils.cs" />
+    <Compile Include="MathsFunctions.cs" />
+    <Compile Include="DrawHelper\PolygonShapes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Colors\Converters\RGB_TO_HSL_Converter.cs" />
+    <Compile Include="Rotating3DCube\RotatingCube.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rotating3DCube\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rotating3DCube\Point3D.cs" />
+    <Compile Include="ScreenCapture.cs" />
+    <Compile Include="Xml\XmlDocumentExtended.cs" />
+    <Compile Include="Xml\XmlNodeExtended.cs" />
+    <Compile Include="Xml\XmlNodeTextReader.cs" />
+    <EmbeddedResource Include="Colors\AllColors\UserControl\BaseColorPicker.resx">
+      <DependentUpon>BaseColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colors\AllColors\UserControl\CatColorPicker.resx">
+      <DependentUpon>CatColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colors\AllColors\UserControl\NoFlickerPanel.resx">
+      <DependentUpon>NoFlickerPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormX\FormX\Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\NoFlickerPanel.resx">
+      <DependentUpon>NoFlickerPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\BaseColorPicker.resx">
+      <DependentUpon>BaseColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\Brushes\BrushPainter2Dialog.resx">
+      <DependentUpon>BrushPainter2Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\Brushes\BrushPainterDialog.resx">
+      <DependentUpon>BrushPainterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\Brushes\Painter2Panel.resx">
+      <DependentUpon>Painter2Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\Brushes\PainterPanel.resx">
+      <DependentUpon>PainterPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\CatColorPicker.resx">
+      <DependentUpon>CatColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\ColorGradientEditor.resx">
+      <DependentUpon>ColorGradientEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\ColorGradientEditorDialog.resx">
+      <DependentUpon>ColorGradientEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\ComboColorPicker.resx">
+      <DependentUpon>ComboColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\ComboColorPickerDialog.resx">
+      <DependentUpon>ComboColorPickerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\CustomColorPicker.resx">
+      <DependentUpon>CustomColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\CustomColorPickerDialog.resx">
+      <DependentUpon>CustomColorPickerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\HatchStylePanel.resx">
+      <DependentUpon>HatchStylePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\LinearGradientPanel.resx">
+      <DependentUpon>LinearGradientPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\LineEditorDialog.resx">
+      <DependentUpon>LineEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\LinePanel.resx">
+      <DependentUpon>LinePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\NoFlickerPanel.resx">
+      <DependentUpon>NoFlickerPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\PenPainter\LinePanel.resx">
+      <DependentUpon>LinePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\PenPainter\PenEditorDialog.resx">
+      <DependentUpon>PenEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\SystemColorPickerDialog.resx">
+      <DependentUpon>SystemColorPickerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\Helpers\Painters\WebColorPickerDialog.resx">
+      <DependentUpon>WebColorPickerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painters\PolygonInput\PolyEditorDialog.resx">
+      <DependentUpon>PolyEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Roboto-Medium.ttf" />
+    <None Include="Resources\Roboto-Regular.ttf" />
+    <None Include="StringProcessing\Humanizer\Bytes\LICENSE" />
+    <None Include="StringProcessing\Humanizer\Inflections\LICENSE" />
+    <None Include="Zeroit.Framework.Utilities.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZeroitStrongKeys.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StringProcessing\Humanizer\FluentDate\In.Months.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StringProcessing\Humanizer\FluentDate\In.SomeTimeFrom.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StringProcessing\Humanizer\FluentDate\On.Days.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormX\Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormX\Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormX\Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormX\Resources\resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormX\Resources\shrink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\add_point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\addPoint_12px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\addPoint_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\addPoint_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\addPoint_9px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Color.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Double_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Double_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\downLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\DownLeft_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\downRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\DownRight_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\First.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\HSL200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Last.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\magControlPanel200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\magControlPanel20061222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\magControlPanel20061222a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\magnifier_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\magnifierglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\magnifierSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\mangnifier_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Next.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\Prev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\upLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\UpLeft_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\upRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Painters\Resources\UpRight_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addPoint_12px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addPoint_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addPoint_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addPoint_9px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownLeft_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DownRight_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\First.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HSL200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Last.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magControlPanel20061222a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magControlPanel20061222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magControlPanel200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifierglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifierSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mangnifier_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpLeft_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpRight_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NativeMethods\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
