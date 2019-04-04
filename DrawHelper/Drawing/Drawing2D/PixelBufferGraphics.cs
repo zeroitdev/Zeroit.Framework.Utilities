@@ -7,7 +7,23 @@
 // Last Modified On : 12-21-2018
 // ***********************************************************************
 // <copyright file="PixelBufferGraphics.cs" company="Zeroit Dev Technologies">
-//     Copyright © Zeroit Dev Technologies  2017. All Rights Reserved.
+//    This program contains Utilities for all C# programming activities.
+//    Copyright Â©  2017  Zeroit Dev Technologies
+//
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+//    You can contact me at zeroitdevnet@gmail.com or zeroitdev@outlook.com
 // </copyright>
 // <summary></summary>
 // ***********************************************************************
@@ -594,7 +610,7 @@ namespace Zeroit.Framework.Utilities.GraphicsExtension.Drawing.Drawing2D
         //    }
 
         //    /* Calcoliamo il deltax ed il deltay della linea, ovvero il numero di pixel presenti a livello
-        //        orizzontale e verticale. Utilizziamo la funzione abs() poichè a noi interessa il loro 
+        //        orizzontale e verticale. Utilizziamo la funzione abs() poichï¿½ a noi interessa il loro 
         //        valore assoluto. */
         //    deltax = Math.Abs(x2 - x1);
         //    deltay = Math.Abs(y2 - y1);
@@ -604,7 +620,7 @@ namespace Zeroit.Framework.Utilities.GraphicsExtension.Drawing.Drawing2D
         //        x, xinc1, xinc2,
         //        y, yinc1, yinc2;
 
-        //    /* Adesso controlliamo se la linea è più "orizzontale" o "verticale", ed inizializziamo
+        //    /* Adesso controlliamo se la linea ï¿½ piï¿½ "orizzontale" o "verticale", ed inizializziamo
         //       in maniera appropriate le variabili di comodo. */
         //    if (deltax >= deltay)
         //    {
@@ -697,16 +713,16 @@ namespace Zeroit.Framework.Utilities.GraphicsExtension.Drawing.Drawing2D
                     // TODO: CLIP_LINE
                     return false;
                 case CLIP_LINE_HORIZONTAL:
-                    if (y1 < 0 || y1 >= pixelBuffer.Height) return false; // la linea è fuori dal clipBounds
-                    if (x1 >= pixelBuffer.Width) return false; // x2 è di conseguenza > di _width
-                    if (x2 < 0) return false; // x1 è di conseguenza < di -1
+                    if (y1 < 0 || y1 >= pixelBuffer.Height) return false; // la linea ï¿½ fuori dal clipBounds
+                    if (x1 >= pixelBuffer.Width) return false; // x2 ï¿½ di conseguenza > di _width
+                    if (x2 < 0) return false; // x1 ï¿½ di conseguenza < di -1
                     if (x1 < 0) x1 = 0;
                     if (x2 >= pixelBuffer.Width) x2 = pixelBuffer.Width - 1;
                     return true;
                 case CLIP_LINE_VERTICAL:
-                    if (x1 < 0 || x1 >= pixelBuffer.Width) return false; // la linea è fuori dal clipBounds
-                    if (y1 >= pixelBuffer.Height) return false; // y2 è di conseguenza > di _height
-                    if (y2 < 0) return false; // y1 è di conseguenza < di -1
+                    if (x1 < 0 || x1 >= pixelBuffer.Width) return false; // la linea ï¿½ fuori dal clipBounds
+                    if (y1 >= pixelBuffer.Height) return false; // y2 ï¿½ di conseguenza > di _height
+                    if (y2 < 0) return false; // y1 ï¿½ di conseguenza < di -1
                     if (y1 < 0) y1 = 0;
                     if (y2 >= pixelBuffer.Height) y2 = pixelBuffer.Height - 1;
                     return true;

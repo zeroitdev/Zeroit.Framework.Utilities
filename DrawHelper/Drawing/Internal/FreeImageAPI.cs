@@ -7,7 +7,23 @@
 // Last Modified On : 12-21-2018
 // ***********************************************************************
 // <copyright file="FreeImageAPI.cs" company="Zeroit Dev Technologies">
-//     Copyright © Zeroit Dev Technologies  2017. All Rights Reserved.
+//    This program contains Utilities for all C# programming activities.
+//    Copyright Â©  2017  Zeroit Dev Technologies
+//
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+//
+//    You can contact me at zeroitdevnet@gmail.com or zeroitdev@outlook.com
 // </copyright>
 // <summary></summary>
 // ***********************************************************************
@@ -1738,7 +1754,7 @@ namespace Zeroit.Framework.Utilities.GraphicsExtension.Drawing.Internal
 		public static extern uint GetDIBSize(FIBITMAP dib);
 
         /**
-		Returns a pointer to the bitmap’s palette. If the bitmap doesn’t have a palette 
+		Returns a pointer to the bitmapï¿½s palette. If the bitmap doesnï¿½t have a palette 
 		(i.e. when the pixel bit depth is greater than 8), this function returns NULL. 
 		@param dib Bitmap to get the palette for.
 		@return Pointer to the start of the palette data.

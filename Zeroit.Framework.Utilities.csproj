@@ -1283,7 +1283,6 @@
     </Compile>
     <None Include="Resources\Roboto-Medium.ttf" />
     <None Include="Resources\Roboto-Regular.ttf" />
-    <None Include="StringProcessing\Humanizer\Bytes\LICENSE" />
     <None Include="StringProcessing\Humanizer\Inflections\LICENSE" />
     <None Include="Zeroit.Framework.Utilities.nuspec">
       <SubType>Designer</SubType>
